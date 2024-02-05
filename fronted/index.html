@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BERTA 2.0</title>
+</head>
+<body>
+    <header>
+        <h1>CompletaMente Test</h1>
+    </header>
+
+    <main>
+        <form id="testCM">
+
+          <label for="fechaNacimiento">¿Cuál es tu fecha de nacimiento?</label>
+          <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+          <br>
+
+          <label>Género:</label>
+          <div>
+            <input type="radio" id="generoMasculino" name="genero" value="masculino">
+            <label for="generoMasculino">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" id="generoFemenino" name="genero" value="femenino">
+            <label for="generoFemenino">Femenino</label>
+          </div>
+          <div>
+            <input type="radio" id="generoOtro" name="genero" value="otro">
+            <label for="generoOtro">Otro</label>
+          </div>
+          <br>
+
+          <label>Perteneces a la comunidad LGBT+:</label>
+          <div>
+            <input type="radio" id="lgbtSi" name="lgbt" value="si">
+            <label for="lgbtSi">Sí</label>
+          </div>
+          <div>
+            <input type="radio" id="lgbtNo" name="lgbt" value="no">
+            <label for="lgbtNo">No</label>
+          </div>
+          <br>
+
+          <label>¿Cuál es tu situación emocional?</label>
+          <div>
+            <input type="radio" id="soltero" name="status" value="Soltero">
+            <label for="generoMasculino">Soltero</label>
+          </div>
+          <div>
+            <input type="radio" id="Casado" name="status" value="Casado">
+            <label for="generoFemenino">Casado</label>
+          </div>
+          <div>
+            <input type="radio" id="generoOtro" name="genero" value="otro">
+            <label for="generoOtro">Otro</label>
+          </div>
+          <br>
+
+          <!-- HADS -->
+          <label>Me siento tenso o nervioso:</label>
+          <select name="pregunta1">
+            <option value="a">Todos los días</option>
+            <option value="b">Muchas veces</option>
+            <option value="c">A veces</option>
+            <option value="d">Nunca</option>
+          </select>
+          <br>
+      
+          <label>Tengo una sensación de miedo, como si algo horrible me fuera a suceder:</label>
+          <select name="pregunta2">
+            <option value="a">Definitivamente y es muy fuerte</option>
+            <option value="b">Sí, pero no es muy fuerte</option>
+            <option value="c">Un poco, pero no me preocupa</option>
+            <option value="d">Nada</option>
+          </select>
+          <br>
+      
+          <label>Tengo la mente llena de preocupaciones:</label>
+          <select name="pregunta3">
+            <option value="a">La mayoría de las veces</option>
+            <option value="b">Con bastante frecuencia</option>
+            <option value="c">A veces, aunque no muy a menudo</option>
+            <option value="d">Nunca</option>
+          </select>
+          <br>
+      
+          <label>Puedo estar sentado cómodamente y sentirme relajado:</label>
+          <select name="pregunta4">
+            <option value="a">Siempre</option>
+            <option value="b">Por lo general</option>
+            <option value="c">No muy a menudo</option>
+            <option value="d">Nunca</option>
+          </select>
+          <br>
+      
+          <label>Tengo una sensación extraña, como si tuviera mariposas o un nudo en el estómago:</label>
+          <select name="pregunta5">
+            <option value="a">Nunca</option>
+            <option value="b">En ciertas ocasiones</option>
+            <option value="c">Con bastante frecuencia</option>
+            <option value="d">Siempre</option>
+          </select>
+          <br>
+      
+          <label>Me siento inquieto, como si no pudiera parar de moverme:</label>
+          <select name="pregunta6">
+            <option value="a">Siempre</option>
+            <option value="b">Bastante</option>
+            <option value="c">No mucho</option>
+            <option value="d">Nada</option>
+          </select>
+          <br>
+      
+          <label>Me asaltan sentimientos repentinos de pánico:</label>
+          <select name="pregunta7">
+            <option value="a">Todo el tiempo</option>
+            <option value="b">Bastante a menudo</option>
+            <option value="c">Rara vez</option>
+            <option value="d">Nunca</option>
+          </select>
+          <br>
+      
+          <!-- PHQ9 -->
+          <label>He sentido poco interés o agrado al hacer las cosas:</label>
+          <select name="pregunta8">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>Me he sentido triste, deprimido o sin esperanzas:</label>
+          <select name="pregunta9">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>He tenido problemas para dormir, mantenerme despierto o duermo demasiado:</label>
+          <select name="pregunta10">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>Me siento cansado o con poca energía:</label>
+          <select name="pregunta11">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>Tengo poco apetito o apetito excesivo:</label>
+          <select name="pregunta12">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>He tenido problemas para concentrarme en actividades como leer o ver la televisión:</label>
+          <select name="pregunta13">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>Me he sentido mal conmigo mismo, que soy un fracaso, o que me he fallado a mí mismo o a mi familia:</label>
+          <select name="pregunta14">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>Me muevo o hablo tan despacio que otras personas pueden darse cuenta. O por el contrario: Estoy tan inquieto e intranquilo que doy vueltas de un lugar a otro, más que de costumbre:</label>
+          <select name="pregunta15">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+      
+          <label>He tenido pensamientos de que estaría mejor muerto o de lastimarme de alguna manera:</label>
+          <select name="pregunta16">
+            <option value="a">Ningún día</option>
+            <option value="b">Varios días (de 1 a 6)</option>
+            <option value="c">Más de la mitad de los días (de 7 a 11)</option>
+            <option value="d">Casi todos los días</option>
+          </select>
+          <br>
+          <br>
+      
+          <!-- BSI -->
+          <label>Cada vez es más frecuente que trate a las personas como si fueran objetos:</label>
+          <select name="pregunta17">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Parece que los demás tienen cada vez menos interés en mi trabajo. No saben valorar mi trabajo.</label>
+          <select name="pregunta18">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Mi trabajo hace que cada vez me importen menos los demás. Además, tampoco tengo tiempo para dedicarles:</label>
+          <select name="pregunta19">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Mi trabajo me deja emocionalmente frío o insensible:</label>
+          <select name="pregunta20">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Cada vez me satura más tener que hacer cosas con personas. Después de trabajar con compañeros me siento agotado:</label>
+          <select name="pregunta21">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Cada vez con más frecuencia me enfada o asusta que personas de mi entorno tengan problemas. Me afecta mucho:</label>
+          <select name="pregunta22">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Últimamente participo en las conversaciones más irritado que antes:</label>
+          <select name="pregunta23">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Últimamente no consigo desempeñar mi profesión como se supone que debería realizarla. A menudo, el trabajo me supera:</label>
+          <select name="pregunta24">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Me siento mal cuando pienso en cómo trato a los demás:</label>
+          <select name="pregunta25">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+      
+          <label>Mi situación es desesperada y no tengo ninguna salida. A veces, tengo la sensación de estar al borde del precipicio:</label>
+          <select name="pregunta26">
+            <option value="a">Nunca</option>
+            <option value="b">Varias veces al año</option>
+            <option value="c">Una vez al mes</option>
+            <option value="d">Un par de veces al mes</option>
+            <option value="e">Una vez a la semana</option>
+            <option value="f">Varias veces a la semana</option>
+            <option value="g">Todos los días</option>
+          </select>
+          <br>
+          <br>
+
+          <!-- UWES -->
+          <label>En mi trabajo me siento lleno de energía:</label>
+          <select name="pregunta27">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Soy fuerte y energético en mi trabajo:</label>
+          <select name="pregunta28">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Estoy entusiasmado con mi trabajo:</label>
+          <select name="pregunta29">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Mi trabajo me inspira:</label>
+          <select name="pregunta30">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Cuando me levanto por las mañanas tengo ganas de ir a trabajar:</label>
+          <select name="pregunta31">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Soy feliz cuando estoy absorto en mi trabajo:</label>
+          <select name="pregunta32">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Estoy orgulloso del trabajo que hago:</label>
+          <select name="pregunta33">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Estoy inmerso en mi trabajo:</label>
+          <select name="pregunta34">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <label>Me "dejo llevar" por mi trabajo:</label>
+          <select name="pregunta35">
+            <option value="a">Nunca</option>
+            <option value="b">Casi nunca</option>
+            <option value="c">Algunas veces</option>
+            <option value="d">Regularmente</option>
+            <option value="e">Bastantes veces</option>
+            <option value="f">Casi siempre</option>
+            <option value="g">Siempre</option>
+          </select>
+          <br>
+
+          <input type="submit" value="Enviar" onclick="sendForm()">
+        </form>
+    </main>
+
+  <!-- Enviar formulario -->
+  <script>
+    function sendForm() {
+      const form = document.getElementById("testCM");
+      const formData = new FormData(form);
+
+      fetch('http://127.0.0.1:8000/send-data', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Respuesta del servidor:', data);
+      })
+      .catch(error => console.error('Error al enviar formulario:', error));
+    }
+  </script>
+</body>
+</html>
